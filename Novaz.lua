@@ -4816,7 +4816,7 @@ function library:CreateSettingsTab(menu)
     end});
 
     mainSection:AddSeparator({text = 'Watermark'})
-    mainSection:AddToggle({text = 'Enabled', flag = 'watermark_enabled', defualt = true});
+    mainSection:AddToggle({text = 'Enabled', flag = 'watermark_enabled', default = true});
     mainSection:AddList({text = 'Position', flag = 'watermark_pos', selected = 'Top Left', values = {'Top', 'Top Left', 'Top Right', 'Bottom Left', 'Bottom Right', 'Custom'}, callback = function(val)
         library.watermark.lock = val;
     end})
